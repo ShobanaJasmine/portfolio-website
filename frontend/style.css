@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: blue;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: rgb(34, 120, 186);
+  color: white;
+}
+section {
+  padding: 30px;
+}
+#projects div {
+  background: white;
+  color:black;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
