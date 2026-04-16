@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 /* Connect MongoDB */
-mongoose.connect("mongodb+srv://shobanajasmine71_db_user:<shobana2006>@cluster0.dujdd2j.mongodb.net/portfolio")
+mongoose.connect("mongodb+srv://shobanajasmine71_db_user:shobana2006@cluster0.dujdd2j.mongodb.net/portfolio")
   .then(() => console.log("DB Connected"))
   .catch(err => console.log(err));
 
@@ -33,6 +33,8 @@ app.post("/projects", async (req, res) => {
 });
 
 /* Start Server */
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
