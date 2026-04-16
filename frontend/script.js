@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/projects")
+fetch("https://portfolio-website-jn0s.onrender.com/projects")
   .then(res => res.json())
   .then(data => {
     console.log(data); // 👈 ADD THIS
